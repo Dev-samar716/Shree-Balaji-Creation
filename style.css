@@ -1,0 +1,240 @@
+.xyz {
+ font-family: 'Dephiana', sans-serif; 
+ text-align: center; 
+ background: linear-gradient(to top right, yellow, green);
+ color: white; 
+ font-size: 3rem; 
+ padding: 3rem;
+} 
+
+* {
+    padding: 0; 
+    margin: 0;
+} 
+#p1 {
+    font-family: 'Poppins', sans-serif; 
+    font-size: small;
+} 
+#body1 {
+   background: #F8F8F8;
+} 
+#s2 {
+    margin-top: 1%; 
+     font-family: 'Poppins', sans-serif;  
+     font-size: 2rem; 
+     text-align: center;
+} 
+#btn1 {
+    padding: 0.4%; 
+    background-color: #F8F8F8; 
+    color: white; 
+    cursor: pointer; 
+    margin-left: 25%; 
+    background-color: red; 
+    border-radius: 10px;
+
+} 
+#info {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1.2rem; 
+    text-align: start; 
+    display: none; 
+    overflow: hidden;
+} 
+.whole{
+   display: flex; 
+   background-color: white; 
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+   margin-left: auto; 
+   margin-right: auto; 
+   margin-top: 3rem;
+   max-width: 70rem;   
+   border-radius: 14px; 
+   animation: fadeIn 3s forwards ease; 
+   opacity: 0;
+   
+}   
+@keyframes fadeIn { 
+     0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}
+.container-2 { 
+    display: flex;
+    justify-content: end; 
+    margin-left: auto;
+
+} 
+
+.welcome-1 {  
+    display: flex;
+    justify-content: flex-start;
+    margin-right: auto; 
+    margin-left: 1rem; 
+    font-size: 1rem; 
+    flex-direction: column; 
+    padding-top: 2rem; 
+} 
+#wwelcome-1 p {
+    font-family: 'Poppins', sans-serif;
+}
+#h-1 {
+    font-family: 'Raleway', sans-serif; 
+}
+#h-2{
+    font-family: 'Raleway', sans-serif; 
+}
+.welcome-1 h1 {
+    padding-bottom: 0.5rem;
+} 
+
+#description {
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .whole {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  #sticker-1 {
+    width: 80%;
+    height: auto;
+    margin-top: 1rem;
+  }
+} 
+#btn-1 { 
+    margin-top: 1.5rem;
+    max-width:12rem; 
+    padding: 0.7rem 1.2rem;  
+    border-radius: 10px; 
+    border-color: lightgray; 
+    background-color: blue; 
+    color: white; 
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+     cursor: pointer; 
+     font-size: 1rem;
+} 
+#btn-1:hover {
+    background-color: #0056b3; 
+    animation: bounce 3s;
+}
+@keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0rem);
+      } 40%{
+        transform: translateY(0.3rem);
+      } 60% {
+        transform: translateY(-0.3rem);
+      }
+} 
+
+.nav-bar {
+    background-color: #ffffff; 
+    display: flex;
+} 
+.container {
+    display: flex; 
+    gap: 1.5rem; 
+    padding: 1rem; 
+    justify-content: flex-end; 
+      margin-right: auto; 
+     margin-left: auto;
+}
+#links {
+    text-decoration: none; 
+    color: #0a0a23; 
+    font-family: 'Poppins', sans-serif;
+}  
+
+#links-2 {
+    text-decoration: none; 
+    color: #0a0a23; 
+    font-family: 'Poppins', sans-serif;
+} 
+#links-2:hover {
+    background-color: lightgray;
+} 
+
+#links:hover {
+    background-color: lightgray;
+} 
+#hr-1 {
+    margin-top: 1rem;
+}
+   
+#h-des {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.3rem; 
+    display: none; 
+    overflow:hidden;
+} 
+#h-des.Open {
+       overflow: auto; 
+       display: block;
+} 
+
+/* Existing CSS above ... */
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+  .whole {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  #sticker-1 {
+    width: 80%;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  .welcome-1 {
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  #h-des {
+    font-size: 1.1rem;
+  }
+
+  #btn-1 {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #h1 {
+    font-size: 2rem;
+  }
+
+  #p1 {
+    font-size: 0.9rem;
+  }
+
+  #h-1, #h-2 {
+    font-size: 1.5rem;
+  }
+
+  #description {
+    font-size: 1rem;
+  }
+
+  #h-des {
+    font-size: 1rem;
+  }
+
+  #btn-1 {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+}
