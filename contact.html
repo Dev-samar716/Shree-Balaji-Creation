@@ -1,144 +1,159 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Contact Us | Shree Balaji Creation</title>
-  <link href="https://fonts.cdnfonts.com/css/dephiana" rel="stylesheet"> 
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style> 
-  
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f8f8f8;
-      margin: 0;
-      padding: 0;
-    }
+<style> 
+  /* Base Styles */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    color: #0a0a23;
+  }
 
-    .nav-bar {
-      background-color: #ffffff;
-      display: flex;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
+  .nav-bar {
+    background-color: #ffffff;
+    display: flex;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
 
-    .container {
-      display: flex;
-      gap: 1.5rem;
-      padding: 1rem;
-      justify-content: flex-end;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  .container {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+    justify-content: flex-end;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
-    #links {
-      text-decoration: none;
-      color: #0a0a23;
-      font-family: 'Poppins', sans-serif;
-    }
+  #links,
+  #links-2 {
+    text-decoration: none;
+    color: #0a0a23;
+    font-family: 'Poppins', sans-serif;
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+  }
 
-    #links:hover {
-      background-color: lightgray;
-    } 
+  #links:hover {
+    background-color: lightgray;
+  }
 
-    #links-2 {
-      text-decoration: none;
-      color: #0a0a23;
-      font-family: 'Poppins', sans-serif; 
-      background-color: lightgray;
-    }
+  #links-2 {
+    background-color: lightgray;
+  }
 
+  .header-title {
+    font-family: 'Dephiana', sans-serif; 
+    text-align: center; 
+    background: linear-gradient(to top right, yellow, green);
+    color: white; 
+    font-size: 3rem; 
+    padding: 3rem 1rem;
+  }
+
+  .contact-container {
+    background-color: white;
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+
+  .contact-container h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #333;
+  }
+
+  .contact-container p {
+    font-size: 1.3rem;
+    color: #444;
+    margin: 1rem 0;
+  }
+
+  /* -------------------- */
+  /* 🌐 Media Queries */
+  /* -------------------- */
+
+  /* Tablets & below */
+  @media (max-width: 992px) {
     .header-title {
-      font-family: 'Dephiana', sans-serif; 
-      text-align: center; 
-      background: linear-gradient(to top right, yellow, green);
-      color: white; 
-      font-size: 3rem; 
-      padding: 3rem;
+      font-size: 2.2rem;
+      padding: 2.5rem 1rem;
     }
 
     .contact-container {
-      background-color: white;
-      max-width: 600px;
-      margin: 2rem auto;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-
-    .contact-container h2 {
-      margin-bottom: 1rem;
-      color: #333;
+      padding: 2.5rem 1.5rem;
+      margin: 2rem 1rem;
     }
 
     .contact-container p {
-      font-size: 1.2rem;
-      color: #555;
-      margin: 1rem 0;
+      font-size: 1.15rem;
     }
 
-    /* 🌐 Responsive Styles */
-    @media (max-width: 768px) {
-      .header-title {
-        font-size: 2rem;
-        padding: 2rem;
-      }
-
-      .container {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.8rem;
-        padding: 1rem;
-      }
-
-      .contact-container {
-        margin: 1rem;
-        padding: 1.5rem;
-      }
-
-      .contact-container p {
-        font-size: 1rem;
-      }
+    .contact-container h2 {
+      font-size: 1.8rem;
     }
 
-    @media (max-width: 480px) {
-      .header-title {
-        font-size: 1.6rem;
-        padding: 1.5rem;
-      }
-
-      .contact-container {
-        padding: 1rem;
-      }
-
-      .contact-container p {
-        font-size: 0.95rem;
-      }
+    .container {
+      gap: 1rem;
+      padding: 0.8rem;
     }
 
-  </style>
-</head>
-<body>
+    #links, #links-2 {
+      font-size: 0.95rem;
+    }
+  }
 
-  <!-- Navigation Bar -->
-  <nav class="nav-bar">
-    <div class="container">
-      <a href="index.html" id="links">Home</a>
-      <a href="services.html" id="links">Services</a>
-      <a href="contact.html" id="links-2">Contact</a>
-    </div>
-  </nav>
+  /* Mobile Phones */
+  @media (max-width: 600px) {
+    .header-title {
+      font-size: 1.8rem;
+      padding: 2rem 1rem;
+    }
 
-  <!-- Page Title -->
-  <div class="header-title">Shree Balaji Creation</div>
+    .contact-container {
+      padding: 2rem 1rem;
+    }
 
-  <!-- Contact Info Section -->
-  <div class="contact-container">
-    <h2>Contact Us</h2>
-    <p><strong>Phone:</strong> 9848036425</p>
-    <p><strong>Email:</strong> dm.553170@gmail.com</p>
-    <p><strong>Location:</strong> Nepalgung - 2</p>
-  </div>
+    .contact-container h2 {
+      font-size: 1.5rem;
+    }
 
-</body>
-</html>
+    .contact-container p {
+      font-size: 1rem;
+    }
+
+    .container {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    #links, #links-2 {
+      font-size: 0.95rem;
+    }
+  }
+
+  /* Extra Small Devices */
+  @media (max-width: 400px) {
+    .header-title {
+      font-size: 1.6rem;
+    }
+
+    .contact-container {
+      padding: 1.5rem 0.8rem;
+    }
+
+    .contact-container p {
+      font-size: 0.95rem;
+    }
+
+    #links, #links-2 {
+      font-size: 0.9rem;
+    }
+  }
+</style>
+
