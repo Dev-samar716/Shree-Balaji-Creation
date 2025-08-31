@@ -212,29 +212,3 @@
   }
 }
 
-@media (max-width: 480px) {
-  #h1 {
-    font-size: 2rem;
-  }
-
-  #p1 {
-    font-size: 0.9rem;
-  }
-
-  #h-1, #h-2 {
-    font-size: 1.5rem;
-  }
-
-  #description {
-    font-size: 1rem;
-  }
-
-  #h-des {
-    font-size: 1rem;
-  }
-
-  #btn-1 {
-    font-size: 0.9rem;
-    padding: 0.6rem 1rem;
-  }
-}
